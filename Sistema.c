@@ -63,4 +63,22 @@ int QuantasCadeiras()
             //verificação se o input meia é valido//
             if (meia > ingresso)
             {
-              printf (" A quantidade de meias entradas e maior que o numero de ingressos
+              printf(" A quantidade de meias entradas e maior que o numero de ingressos, por favor digite novamente\n");
+              printf(" Digite 0 caso deseje cancelar a meia entrada\n");
+            }
+            else
+            {
+              verifica = 0;
+            }
+          }
+          
+          for (int i = 0; i < meia: i++)
+          {
+            //Armazenando o numero da carteira estudante para não se repetir//
+            printf("Por favor digite o numero da carteira de estudante : \nDigite 0 caso deseje cancelar\n");
+            scanf("%d", &carteira);
+            int CarteirasUsadas[carteira];
+            
+            for (int W = 0; W < meia; W++)
+            {
+              CarteirasUsadas[W] = 0;
