@@ -82,3 +82,60 @@ int QuantasCadeiras()
             for (int W = 0; W < meia; W++)
             {
               CarteirasUsadas[W] = 0;
+            }
+            for (int j = 0; j < meia; j+++)
+            {
+              if (carteira == CarteirasUsadas[j])
+              {
+                PossoUsar = 0;
+                break;
+              }
+              else 
+                PossoUsar = 1;
+            }
+            if (carteira == 0)
+            {
+              printf("Codigo cancelado!\n");
+              continue;
+            }
+            
+            if carteira >= 10000 && carteira <= 99999)
+            {
+              //Cálculo da carteira estudante em módulo  de 10//
+              PrimeiroDigito = carteira / 1000;
+              SegundoDigito = (carteira / 1000) - PrimeiroDigito * 10;
+              TerceiroDigito = (carteira / 100) - ((PrimeiroDigito * 10) + SegundoDigito) * 10);
+              QuartoDigito = (carteira / 10) - ((PrimeiroDigito * 1000) + (SegundoDigito * 100);
+              DigitoComparada = carteira - ((PrimeiroDigito * 10000) + (SegundoDigito * 1000) + (TerceiroDigito * 100) + QuartoDigito * 10);
+              SomaDigitos = QuartoDigito * 2 + TerceiroDigito * 1 + SegundoDigito * 2 + PrimeiroDigito *
+              DigitoFinal = 10 - (SomaDigitos % 10);
+                                                
+             if (PossoUsar == 0 )
+             {
+               printf("Opa! Esse codigo ja foi utilizado! Tente outro ou digite 0 para cancelar!\n");
+               i--;
+               continue;
+               // i-- para refazer essa mesma rotação do código
+             }
+             else if (DigitoFinal == DigitoComparada)
+             {
+               printf("Desconto aplicado!\n");
+               DescontosAplicados++;
+               CarteirasUsadas[i] = carteira;
+               continue;
+             }
+             else
+             {
+               printf("Ops! Esse codigo e invalido! Tente novamente!\n");
+               i--;
+               continue;
+               // i-- para refazer essa mesma rotação do código
+             }
+               }
+                }
+                  return DescontosAplicados;
+                }
+                 int ClienteItasil(int Ingressos, int MeiaEntrada)                                 
+                {                              
+                  int X;                              
+                 
