@@ -138,4 +138,6 @@ int QuantasCadeiras()
                  int ClienteItasil(int Ingressos, int MeiaEntrada)                                 
                 {                              
                   int X;                              
-                 
+                  unsigned int Codigo, DescontosAplicados = 0, PossoUsar = 1;
+
+                  while
